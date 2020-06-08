@@ -69,10 +69,13 @@ extensions = [
     'sphinx_autodoc_typehints',
     'reno.sphinxext',
     'sphinx.ext.doctest',
+    'sphinx.ext.graphviz',
+    'sphinx.ext.inheritance_diagram',
 ]
 html_static_path = ['_static']
 templates_path = ['_templates']
 html_css_files = ['style.css', 'custom.css']
+inheritance_graph_attrs = dict(rankdir="LR", size='""')
 
 # -----------------------------------------------------------------------------
 # Autosummary
